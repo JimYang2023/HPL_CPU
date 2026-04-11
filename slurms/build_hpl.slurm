@@ -11,7 +11,7 @@ echo "Starting job on $(date)"
 # Centralized variable management
 PROJECT_ID="ACD115053"
 CAPTAIN_UN="jimyang1112"
-PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}"
+PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 SRC_DIR="${PROJECT_ROOT}/src"
 OPT_DIR="${PROJECT_ROOT}/opt"
 HPCX_HOME="${SRC_DIR}/hpcx"
@@ -28,7 +28,7 @@ which mpirun
 
 echo "=== Starting HPL compilation ==="
 
-mv $SRC/slurms/Make.linux $SRC/hpl-2.3/Make.linux
+cp $SRC/slurms/Make.linux $SRC/hpl-2.3/Make.linux
 
 cd $SRC/hpl-2.3
 
