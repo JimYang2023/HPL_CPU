@@ -9,9 +9,13 @@
 echo "Starting job on $(date)"
 
 # Centralized variable management
-PROJECT_ID="ACD115053"
-CAPTAIN_UN=""
-PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
+# PROJECT_ID="ACD115053"
+# CAPTAIN_UN=""
+# PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
+
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+PROJECT_ROOT=$(dirname "$SCRIPT_DIR")
+
 SRC="${PROJECT_ROOT}/src"
 
 HPCX_ROOT="${SRC}/hpcx"
