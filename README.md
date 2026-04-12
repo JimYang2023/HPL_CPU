@@ -14,3 +14,7 @@ sbatch build_hpcx.slurm
 sbatch build_openblas.slurm
 sbatch build_hpl.slurm
 ```
+
+需要改 src/hpcx/rebuild.sh 的 MPI 的路徑
+
+
