@@ -13,7 +13,7 @@ CAPTAIN_UN="rayhuang"
 PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 export UCX_LOG_LEVEL=ERROR
 export UCX_IB_GPU_DIRECT_RDMA=yes
-export UCX_TLS=self,rc,dc
+export UCX_TLS=self,sm,rc,dc
 export HPCX_ENABLE_OMPI5=1
 source $PROJECT_ROOT/src/hpcx/hpcx-rebuild.sh
 hpcx_load
