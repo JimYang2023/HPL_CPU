@@ -67,8 +67,7 @@ ARCH         = linux
 # - HPL Directory Structure / HPL library ------------------------------
 # ----------------------------------------------------------------------
 #
-# PROJECT_ROOT =/work//ACD115053/HPL_CPU
-PROJECT_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST)))/../..)
+PROJECT_ROOT =/work/rayhuang/ACD115053/HPL_CPU
 TOPdir       =$(PROJECT_ROOT)/src/hpl-2.3
 INCdir       =$(TOPdir)/include
 BINdir       =$(TOPdir)/bin/$(ARCH)
