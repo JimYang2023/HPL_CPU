@@ -10,7 +10,7 @@ echo "Starting job on $(date)"
 
 # Centralized variable management
 PROJECT_ID="ACD115053"
-CAPTAIN_UN="rayhuang"
+CAPTAIN_UN="rayhuang111"
 PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 
 SRC="${PROJECT_ROOT}/src"

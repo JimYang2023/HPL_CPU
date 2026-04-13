@@ -9,7 +9,7 @@
 echo "Starting job on $(date)"
 
 PROJECT_ID="ACD115053"
-CAPTAIN_UN="rayhuang"
+CAPTAIN_UN="rayhuang111"
 PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 export UCX_LOG_LEVEL=ERROR
 export UCX_IB_GPU_DIRECT_RDMA=yes

@@ -10,7 +10,7 @@ echo "Starting job on $(date)"
 
 # Centralized variable management
 PROJECT_ID="ACD115053"
-CAPTAIN_UN="rayhuang"
+CAPTAIN_UN="rayhuang111"
 PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 
 SRC_DIR="${PROJECT_ROOT}/src"
@@ -20,7 +20,7 @@ echo "=== Starting OpenBLAS compilation ==="
 # Configure(if needed), compile and insall commends
 # ...
 
-cd ${SRC}/OpenBLAS-0.3.32
+cd ${SRC_DIR}/OpenBLAS-0.3.32
 
 make clean
 make -j 8 BINARY=64

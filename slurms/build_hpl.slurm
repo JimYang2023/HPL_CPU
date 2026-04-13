@@ -10,7 +10,7 @@ echo "Starting job on $(date)"
 
 # Centralized variable management
 PROJECT_ID="ACD115053"
-CAPTAIN_UN="rayhuang"
+CAPTAIN_UN="rayhuang111"
 PROJECT_ROOT="/work/${CAPTAIN_UN}/${PROJECT_ID}/HPL_CPU"
 
 SRC_DIR="${PROJECT_ROOT}/src"
@@ -29,9 +29,9 @@ which mpirun
 
 echo "=== Starting HPL compilation ==="
 
-cp $PROJECT_ROOT/slurms/Make.linux $SRC/hpl-2.3/Make.linux
+cp $PROJECT_ROOT/slurms/Make.linux $SRC_DIR/hpl-2.3/Make.linux
 
-cd $SRC/hpl-2.3
+cd $SRC_DIR/hpl-2.3
 
 if [ -d bin/linux ]; then
     make -j8 arch=linux clean
